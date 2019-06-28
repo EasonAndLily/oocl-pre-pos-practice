@@ -1,5 +1,14 @@
-'use strict';
+"use strict";
 
 function createUpdatedCollection(collectionA, objectB) {
-  return '实现练习要求，并改写该行代码。';
+  return collectionA.map((item) => {
+    if (objectB.value.includes(item.key)) {
+      item.count = overThreeWillMinusOne(item.count);
+    }
+    return item;
+  });
+}
+
+function overThreeWillMinusOne(number) {
+  return number - Math.floor(number / 3);
 }
