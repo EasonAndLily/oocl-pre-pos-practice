@@ -7,7 +7,7 @@
   },
   "scripts": {
     "lint": "eslint . -c twa-camp-2016 --no-eslintrc || true",
-    "test": "jasmine-node --verbose specs",
+    "test": "jasmine-node --verbose specs/filter/filter_words_spec.js",
     "test-single": "jasmine-node --verbose "
   },
   "devDependencies": {
