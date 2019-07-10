@@ -1,16 +1,6 @@
 "use strict";
 
-function filterWordsMoreThanSix(words, condition) {
-  let result = [];
-  for (let i = 0; i < words.length; i++) {
-    if (condition(words[i])) {
-      result.push(words[i]);
-    }
-  }
-  return result;
-}
-
-function filterWordsMoreThanFour(words, condition) {
+function filterWordsByCondition(words, condition) {
   let result = [];
   for (let i = 0; i < words.length; i++) {
     if (condition(words[i])) {
@@ -21,6 +11,5 @@ function filterWordsMoreThanFour(words, condition) {
 }
 
 module.exports = {
-  filterWordsMoreThanSix: filterWordsMoreThanSix,
-  filterWordsMoreThanFour: filterWordsMoreThanFour
+  filterWordsByCondition: filterWordsByCondition
 };

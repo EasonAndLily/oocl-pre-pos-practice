@@ -8,7 +8,7 @@ describe("choose_words", function() {
     const condition = (word) => {
       return word.length > 6;
     };
-    const result = filterWords.filterWordsMoreThanSix(words, condition);
+    const result = filterWords.filterWordsByCondition(words, condition);
 
     expect(result).toEqual(["exuberant", "destruction", "present"]);
   });
@@ -17,7 +17,7 @@ describe("choose_words", function() {
     const condition = (word) => {
       return word.length > 4;
     };
-    const result = filterWords.filterWordsMoreThanFour(words, condition);
+    const result = filterWords.filterWordsByCondition(words, condition);
 
     expect(result).toEqual(["limit", "exuberant", "destruction", "present"]);
   });
